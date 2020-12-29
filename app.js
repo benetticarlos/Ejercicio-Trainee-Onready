@@ -1,4 +1,4 @@
-/*  */
+/* Array conformada por todos los vehículos */
 
 const arr = [
   {
@@ -30,7 +30,7 @@ const arr = [
   },
 ];
 
-console.log(arr);
+console.log(Object.values(arr));
 
 /* Ordenamiento del array en base al precio de los vehículos */
 
@@ -71,9 +71,8 @@ console.log(
     o.precio
 );
 
+/* Bloque encargado de mostrar la lista de vehículos dependiendo su precio */
 console.log("Vehículos ordenados por precio de mayor a menor:");
 for (const vehiculo of arrayPrecios.reverse()) {
   console.log(vehiculo.marca + " " + vehiculo.modelo);
 }
-
-
