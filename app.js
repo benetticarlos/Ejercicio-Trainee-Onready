@@ -7,21 +7,18 @@ const arr = [
     puertas: 4,
     precio: 200000.0,
   },
-
   {
     marca: "honda",
     modelo: "titan",
     cilindrada: "125cc",
     precio: 60000.0,
   },
-
   {
     marca: "peugeot",
     modelo: "208",
     puertas: 5,
     precio: 250000.0,
   },
-
   {
     marca: "yamaha",
     modelo: "YBR",
@@ -30,8 +27,9 @@ const arr = [
   },
 ];
 
-arr.forEach(element => console.log(element));
+arr.forEach((element) => console.log(element));
 
+console.log("=============================");
 
 /* Ordenamiento del array en base al precio de los vehículos */
 
@@ -72,6 +70,7 @@ console.log(
     o.precio
 );
 
+console.log("=============================");
 /* Bloque encargado de mostrar la lista de vehículos dependiendo su precio */
 console.log("Vehículos ordenados por precio de mayor a menor:");
 for (const vehiculo of arrayPrecios.reverse()) {
