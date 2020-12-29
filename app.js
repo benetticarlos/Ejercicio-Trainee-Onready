@@ -30,7 +30,8 @@ const arr = [
   },
 ];
 
-console.log(Object.values(arr));
+arr.forEach(element => console.log(element));
+
 
 /* Ordenamiento del array en base al precio de los vehículos */
 
